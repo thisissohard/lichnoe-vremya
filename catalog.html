@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-catalog.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="headers">
+            <a href="index.html" class="header-logo"></a>
+
+            <nav class="navigation">
+                <a href="map.html">Интерактивная карта</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="lk.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section class="catalog">
+            <h1 class="catalog-title">Каталог товаров</h1>
+            <div class="catalog-layout">
+                <form class="filters" id="filters">
+                    <fieldset class="filters-group">
+                        <legend>Тип одежды:</legend>
+                        <label class="check">
+                            <input type="checkbox" name="type" value="hats">
+                            <span>Головные уборы</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="type" value="jackets">
+                            <span>Куртки</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="type" value="top">
+                            <span>Верх</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="type" value="bottom">
+                            <span>Низ</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="type" value="shoes">
+                            <span>Обувь</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filters-group">
+                        <legend>Пол:</legend>
+                        <label class="check">
+                            <input type="checkbox" name="gender" value="m">
+                            <span>Мужская</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="gender" value="f">
+                            <span>Женская</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="filters-group">
+                        <legend>Цена:</legend>
+                        <label class="check">
+                            <input type="checkbox" name="price" value="0-999">
+                            <span>&lt; 1000 руб</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="price" value="1000-2499">
+                            <span>1000–2499 руб</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="price" value="2500-5000">
+                            <span>2500–5000 руб</span>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox" name="price" value="5001-999999">
+                            <span>&gt; 5000 руб</span>
+                        </label>
+                    </fieldset>
+
+                    <div class="filters-actions">
+                        <button class="btn btn--yellow" type="reset" aria-label="Сбросить">✕</button>
+                        <button class="btn btn--red" type="submit">Применить</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="products">
+                <ul class="products-grid">
+
+                    <li class="card" data-type="shoes" data-gender="f" data-price="4700">
+                        <div class="card-media">
+                            <img class="card-img" src="images/12.jpg" alt="обувь">
+                            <span class="card-brand">Антресоль</span>
+                            <button class="card-fav" type="button">♡</button>
+                        </div>
+                        <h3 class="card-title">Туфли замшевые на невысоком каблуке</h3>
+                        <p class="card-price">4700 руб</p>
+                    </li>
+
+                    <li class="card" data-type="top" data-gender="m" data-price="3200">
+                        <div class="card-media">
+                            <img class="card-img" src="imаges/13.jpg" alt="свитер">
+                            <span class="card-brand">Антресоль</span>
+                            <button class="card-fav" type="button">♡</button>
+                        </div>
+                        <h3 class="card-title">Шерстяной свитер с орнаментом</h3>
+                        <p class="cardprice">3200 руб</p>
+                    </li>
+
+                    <li class="card" data-type="jackets" data-gender="m" data-price="8900">
+                        <div class="card-media">
+                            <img class="card-img" src="images/14.jpg" alt="куртка">
+                            <span class="card-brand">Fleur</span>
+                            <button class="card-fav" type="button">♡</button>
+                        </div>
+                        <h3 class="card__title">Кожаная куртка 90-х</h3>
+                        <p class="card__price">8900 руб</p>
+                    </li>
+
+
+                    <li class="card extra" data-type="hats" data-gender="f" data-price="950">
+                        <div class="card-media">
+                            <img class="card-img" src="images/15.jpg" alt="шляпа">
+                            <span class="card-brand">Fleur</span>
+                            <button class="card-fav" type="button">♡</button>
+                        </div>
+                        <h3 class="card-title">Шляпа фетровая</h3>
+                        <p class="card-price">950 руб</p>
+                    </li>
+
+                </ul>
+
+                <p class="products-empty" id="empty">Ничего не нашлось</p>
+                <button class="btn btn--red products-more" id="more" type="button">Показать больше</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footers">
+            
+            <div class="footer-brand">
+                <span class="footer-logo"></span>
+                <span>Личное время</span>
+            </div>
+
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <a href="#">О проекте</a>
+                <a href="#">Партнёрам</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <a href="#">Обратная связь</a>
+                <a href="#">Задать вопрос</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>8 800 770 70 81</h4>
+                <a href="#">Вконтакте</a>
+                <a href="#">Телеграм</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Политика конфиденциальности</span>
+        </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>

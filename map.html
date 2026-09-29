@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style-map.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="headers">
+            <a href="index.html" class="header-logo"></a>
+
+            <nav class="navigation">
+                <a href="map.html">Интерактивная карта</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="lk.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section class="search">
+            <h2 class="section-title">Настрой свой поиск</h2>
+
+            <div class="filters">
+                <button class="filter" type="button">Район ↓</button>
+                <button class="filter" type="button">Атмосфера ↓</button>
+                <button class="filter" type="button">Формат ↓</button>
+            </div>
+
+            <p class="search-found">Найдено 3 уникальные позиции:</p>
+
+            <div class="search-layout">
+                <ul class="cards">
+                    <li class="card">
+                        <img class="card-img" src="images/8.jpg" alt="fleur">
+                        <div class="card-body">
+                            <span class="card-address">Кованский переулок, 22-24</span>
+                            <h3 class="card-name">Fleur</h3>
+                            <p class="card-text">Винтажный магазин-подвал с разрисованными дверьми</p>
+                        </div>
+            
+                    </li>
+
+                    <li class="card">
+                        <img class="card-img" src="images/9.jpg" alt="лисы">
+                        <div class="card-body">
+                            <span class="card-address">Большая Конюшенная, 9</span>
+                            <h3 class="card-name">Лисы</h3>
+                            <p class="card-text">Кураторская подборка объектов интерьера и одежды с характером</p>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <img class="card-img" src="images/10.jpg" alt="антресоль">
+                        <div class="card-body">
+                            <span class="card-address">Невский проспект, 134а</span>
+                            <h3 class="card-name">Антресоль</h3>
+                            <p class="card-text">Место, где время замирает. Ностальгическая одежда, обувь и аксессуары</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="map" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63943.68758634213!2d30.312137902504553!3d59.94474844304588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a2800dbc73%3A0xa796033ee14c27bf!2z0JDQvdGC0YDQtdGB0L7Qu9GMINCy0LjQvdGC0LDQtg!5e0!3m2!1sru!2sru!4v1790690012159!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+    
+        <section class="suggest">
+            <h2 class="section-title">Знаешь секретное место?</h2>
+            <p class="suggest-subtitle">Помоги проекту «Личное время» стать полнее!</p>
+
+            <div class="suggest-layout">
+                <p class="suggest-text">Если ты нашел классную винтажную лавку или открыл свое пространство – поделись этим с сообществом.</p>
+                <img class="suggest-img" src="images/11.jpg" alt="вайб фото">
+
+                <form class="form" action="#" method="post">
+                    <label class="form-field">
+                        Название места:
+                        <input class="form-input" type="text" name="name" required>
+                    </label>
+                    <label class="form-field">
+                        Ссылка на соцсети:
+                        <input class="form-input" type="url" name="link">
+                    </label>
+                    <label class="form-field">
+                        Почему оно должно быть на карте?
+                        <input class="form-input" type="text" name="reason">
+                    </label>
+                    <button class="form-btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footers">
+            
+            <div class="footer-brand">
+                <span class="footer-logo"></span>
+                <span>Личное время</span>
+            </div>
+
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <a href="#">О проекте</a>
+                <a href="#">Партнёрам</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <a href="#">Обратная связь</a>
+                <a href="#">Задать вопрос</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>8 800 770 70 81</h4>
+                <a href="#">Вконтакте</a>
+                <a href="#">Телеграм</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Политика конфиденциальности</span>
+        </div>
+    </footer>
+
+</body>
