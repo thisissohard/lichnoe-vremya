@@ -1,6 +1,6 @@
 body {
     font-family: serif;
-    background: #f5f5f3;
+    background: #ffffff;
 }
 .logo-circle {
     display: block;
@@ -16,11 +16,11 @@ body {
 }
 .gallery-img-small {
     width: 100%;
-    height: 152px;
+    height: 150px;
     object-fit: cover;
 }
 .feature-box {
-    background: #f4e58a;
+    background: #FBE5A2;
     min-height: 90px;
 }
 .product-card {
@@ -28,7 +28,7 @@ body {
     border: 1px solid #ddd;
 }
 .product-card .card-img-top {
-    height: 180px;
+    height: 500px;
     object-fit: cover;
 }
 .btn-fav {
@@ -37,17 +37,20 @@ body {
     top: 150px;
     width: 30px;
     height: 30px;
-    border: none;
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
 }
+.btn-danger {
+    background-color: #CC486C; ;
+}
+
 
 .headers{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
+    max-width: auto;
     margin: 0 auto;
     padding: 16px 20px;
     background: #1f1f1f;
@@ -70,8 +73,8 @@ body {
 
 
 .footer { 
-    background: var(--dark); 
-    color: #fff; 
+    background: #202020;
+    color: #ffffff; 
     margin-top: 60px; 
 }
 .footers {
@@ -108,14 +111,15 @@ body {
     font-size: 14px; 
 }
 .footer-bottom {
-    border-top: 1px solid #444;
+    border-top: 1px solid #202020;
     padding: 16px 20px;
     text-align: center;
     font-size: 13px;
     color: #999;
 }
 body {
-  font-family: 'Montserrat Alternates', sans-serif; /* весь обычный текст */
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 22px; /* весь обычный текст */
 }
 
 h1, h2, h3,
@@ -123,7 +127,8 @@ h1, h2, h3,
 .section-title,
 .how__title,
 .card__name {
-  font-family: 'Days One', sans-serif; /* заголовки */
+  font-family: 'Days One', sans-serif;
+  font-size: 44px; /* заголовки */
 }
 
 
